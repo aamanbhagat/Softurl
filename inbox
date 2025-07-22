@@ -1,0 +1,33 @@
+LABEL ok
+MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Image_9']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 0 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=> X4 Y=> Y4
+    ON ERROR
+
+    END
+MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithWindowsOcr TextToFind: $'''noreply@bright-notice.com''' IsRegEx: False WindowsOcrLanguage: MouseAndKeyboard.WindowsOcrLanguage.English Occurence: 1 SearchForTextOn: MouseAndKeyboard.SearchTarget.EntireScreen ImageWidthMultiplier: 1 ImageHeightMultiplier: 1 MovementStyle: MouseAndKeyboard.MovementStyle.Instant ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClicking: 0 PositionRelativeToText: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 X=> LocationOfTextFoundX Y=> LocationOfTextFoundY Width=> WidthOfTextFound Height=> HeightOfTextFound
+    ON ERROR
+        REPEAT ACTION
+    END
+MouseAndKeyboard.MoveMouseToImage.ClickImage Images: [imgrepo['Image_9']] SearchForImageOn: MouseAndKeyboard.SearchTarget.EntireScreen MousePositionOnImage: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 Tolerance: 10 MovementStyle: MouseAndKeyboard.MovementStyle.Instant Occurence: 1 Timeout: 0 ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClick: 0 SearchAlgorithm: MouseAndKeyboard.ImageFinderAlgorithm.Legacy X=> X4 Y=> Y4
+    ON ERROR
+
+    END
+MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithWindowsOcr TextToFind: $'''noreply@bright-notice.com''' IsRegEx: False WindowsOcrLanguage: MouseAndKeyboard.WindowsOcrLanguage.English Occurence: 1 SearchForTextOn: MouseAndKeyboard.SearchTarget.EntireScreen ImageWidthMultiplier: 1 ImageHeightMultiplier: 1 MovementStyle: MouseAndKeyboard.MovementStyle.Instant ClickType: MouseAndKeyboard.ClickType.LeftClick SecondsBeforeClicking: 0 PositionRelativeToText: MouseAndKeyboard.PositionOnImage.MiddleCenter OffsetX: 0 OffsetY: 0 X=> LocationOfTextFoundX Y=> LocationOfTextFoundY Width=> WidthOfTextFound Height=> HeightOfTextFound
+    ON ERROR
+        REPEAT ACTION
+    END
+WebAutomation.ExtractData.ExtractSingleValue BrowserInstance: Browser ExtractionParameters: {[$'''html > body > div:eq(0) > div > div:eq(1) > div > div:eq(1) > div:eq(1) > div:eq(0) > div > div > div:eq(2) > div > div > div:eq(2) > div > div > div > div > div > div > div:eq(1) > div > div:eq(1) > div:eq(0) > div > div > div > div > div > div:eq(2) > div:eq(0) > div > div > div > div > table > tbody > tr > td > table:eq(1) > tbody > tr:eq(1) > td > table > tbody > tr > td > div''', $'''Own Text''', $''''''] } TimeoutInSeconds: 1 ExtractedData=> otp
+    ON ERROR
+        GOTO ok
+    END
+
+# [ControlRepository][PowerAutomateDesktop]
+
+{
+  "ControlRepositorySymbols": [],
+  "ImageRepositorySymbol": {
+    "Repository": "{\r\n  \"Folders\": [],\r\n  \"Images\": [\r\n    {\r\n      \"Id\": \"47843247-7424-4705-9227-40649a254717\",\r\n      \"Name\": \"Image_9\",\r\n      \"Screenshot\": \"iVBORw0KGgoAAAANSUhEUgAAACgAAAAdCAYAAADYSS5zAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHbSURBVFhHzZUxbsIwGIW5CkfoNThCV0ZGlko9Ah0ZWThAt5ahUkYWhKIOiAFBYCKASqA0yEhQXhWwEyfPAVp1sKVv+ezET7H/P4XCQw9WQ8I2SNgGCdsgYRskbIOEbZCwDRIXGaLSCdFfHyC+EQ8h9nB7C9zXsusD9E8rDnBe0nOl7g7iNHdEvzsx7CUhkUfNx+v6mKQyDSFQb+rPmQMWWyFW8pHVyEcxu5cOCSMTNBYq3BHeaIlyXc7Vxqh2BHz1RcMQ1fg5Q8BmgP5ehpsuUaK9MpAw8baVxwF4rvk49K/ivY+lzwac4Dk4rxGL4Hq4CBIGnqZy580Xyob5M+N4cywCeWx6wAGqo8N5PvrKdF9zIEFM4YTn90b3hecT4gBCHXMS0B3Jotjv0Ejd0yuQIHw48nz/HlAbH+vbjlZBgviPgAc47i8qV4eEgcZMvvnWOzgLpEsXyc29T4eEgWJb1XD+i4tOUulueyB9toq1QolcS627AAkjSXs49cHeHCW9D7o7rFQfDD61O5YNGOHHRXdTwZDIoz6Hs1Ehc8YmxKMKfsIUMN2sr7YcEhcZouJu4YXpX54Id3A6U9zR+pyAmcZ+sWmTsA0StkHCNkjYBgnbIGEbJGyDhGX8AEgCcCY3bBQtAAAAAElFTkSuQmCC\",\r\n      \"ScreenshotPath\": \"imageRepo-screenshots\\\\48155806-1f2a-47c4-9ec9-a7915cae9c30.png\"\r\n    }\r\n  ],\r\n  \"Version\": 1\r\n}",
+    "ImportMetadata": {},
+    "Name": "imgrepo"
+  },
+  "ConnectionReferences": []
+}
