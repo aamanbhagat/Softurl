@@ -1,0 +1,4 @@
+Variables.ShuffleList List: names
+Variables.ShuffleList List: surnames
+Text.Random UseUpperCaseLetters: False UseLowerCaseLetters: False UseDigits: True UseSymbols: False MinimumLength: 1 MaximumLength: 4 RandomText=> RandomText
+EXIT FUNCTION
