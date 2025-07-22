@@ -1,0 +1,11 @@
+
+FUNCTION birth GLOBAL
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}{Tab}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''jan{Enter}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+    Variables.GenerateRandomNumber.RandomNumber MinimumValue: 3 MaximumValue: 27 RandomNumber=> date
+    Variables.GenerateRandomNumber.RandomNumber MinimumValue: 1997 MaximumValue: 2006 RandomNumber=> year
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%date%{Enter}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''{Tab}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+    MouseAndKeyboard.SendKeys.FocusAndSendKeys TextToSend: $'''%year%{Enter}''' DelayBetweenKeystrokes: 0 SendTextAsHardwareKeys: True
+END FUNCTION
